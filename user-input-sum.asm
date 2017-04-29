@@ -57,16 +57,16 @@ _start:
    int 0x80
 
 
-   mov eax, [number1]   ;subtracting ascii '0'
+   mov eax, [number1]   ;subtracting ascii '0' to convert it to decimal
    sub eax, '0'
 
-   mov ebx, [number2]
+   mov ebx, [number2]   ;subtracting ascii '0' to convert it to decimal
    sub ebx, '0'
 
    add eax, ebx         ;convert the sum from decimal to ascii
    add eax, '0'
 
-   mov [res], eax       ; storing the sum
+   mov [res], eax       ; storing the sum in the memory location res
 
 
    mov eax, sys_write   ; print the sum
