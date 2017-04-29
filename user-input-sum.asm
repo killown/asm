@@ -1,4 +1,4 @@
-; sum of two digits by user input
+; sum numbers by user input
 sys_write equ 4
 sys_read  equ 3
 sys_exit equ 1
